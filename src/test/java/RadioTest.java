@@ -259,4 +259,13 @@ public class RadioTest {
         radio.volumeDown();
         Assertions.assertEquals(98, radio.getCurrentVolume());
     }
+
+    @Test
+    public void shouldSetCurrentStationWithConstruct() {
+        Radio radio = new Radio(10);
+
+        radio.setCurrentStation(6);
+
+        Assertions.assertEquals(6, radio.getCurrentStation());
+    }
 }
