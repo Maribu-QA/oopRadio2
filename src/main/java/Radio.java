@@ -3,7 +3,7 @@ public class Radio {
     private int currentVolume;
 
     // Громкость
-    
+
     public void volumeUp() {
         if (currentVolume == 100) {
             return;
